@@ -1,0 +1,11 @@
+<svg width="500" height="150" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icono -->
+  <circle cx="70" cy="75" r="50" fill="#0f172a"/>
+  <path d="M55 55L40 75L55 95" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M85 55L100 75L85 95" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="78" y1="50" x2="62" y2="100" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Texto -->
+  <text x="140" y="75" font-family="'Inter', sans-serif" font-weight="800" font-size="52" fill="#0f172a">DESOFTSIS</text>
+  <text x="142" y="105" font-family="'Inter', sans-serif" font-weight="400" font-size="18" letter-spacing="2" fill="#0369a1">SYSTEMS LLC</text>
+</svg>

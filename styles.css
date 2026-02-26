@@ -1,0 +1,39 @@
+/* Configuración Global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ajuste del scroll para que el navbar fijo no tape el título */
+section {
+    scroll-margin-top: 6rem;
+}
+
+/* Personalización del Scrollbar (Estilo moderno) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Utilidad para inputs */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #0369a1; /* Brand 600 */
+    box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.1);
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- FAVICON ACTUALIZADO -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg?v=2">
+    <title>DESOFTSIS LLC - Desarrollo de Software & Aplicaciones Móviles</title>
+    <meta name="description" content="Sitio oficial de DESOFTSIS LLC. Desarrolladores de Dolar al día, Dolar México y la plataforma SaaS Vendeturifa.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Configuración Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0369a1',
+                            700: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-600 bg-white antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-100 fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                   <a href="#" class="flex-shrink-0 flex items-center">
+                    <!-- Ajusta el width (w-48) según el tamaño que prefieras -->
+                    <img src="img/logo.svg" alt="DESOFTSIS LLC Logo" class="h-12 w-auto">
+                </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-sm font-medium text-gray-700 hover:text-brand-600 transition">Inicio</a>
+                    <a href="#productos" class="text-sm font-medium text-gray-700 hover:text-brand-600 transition">Proyectos</a>
+                    <a href="#nosotros" class="text-sm font-medium text-gray-700 hover:text-brand-600 transition">Empresa</a>
+                    <a href="#contacto" class="bg-brand-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contacto Corporativo
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-600 focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#inicio" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Inicio</a>
+                <a href="#productos" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Proyectos</a>
+                <a href="#nosotros" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Empresa</a>
+                <a href="#contacto" class="block px-3 py-3 text-base font-medium text-brand-600 font-bold hover:bg-gray-50 rounded-md">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden relative bg-slate-50">
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#444 1px, transparent 1px); background-size: 24px 24px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-800 text-xs font-bold tracking-wide uppercase mb-6 border border-brand-200">
+                Registered in Wyoming, USA
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+                Innovación tecnológica <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 to-cyan-600">sin fronteras</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+                DESOFTSIS LLC se especializa en el desarrollo de soluciones móviles de alto impacto y plataformas SaaS escalables para el mercado global.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#productos" class="px-8 py-3.5 rounded-lg bg-brand-900 text-white font-semibold shadow-lg hover:bg-brand-800 transition transform hover:-translate-y-1">
+                    Ver Portafolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Products Section (CON ENLACES ACTUALIZADOS) -->
+    <section id="productos" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Nuestros Desarrollos</h2>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+                    Software propio diseñado para resolver necesidades financieras y de gestión.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 pt-6">
+                
+                <!-- Dolar al Día -->
+                <div class="group relative bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 mt-6">
+                    <!-- Logo con Link -->
+                    <a href="https://www.dolaraldiavzla.com" target="_blank" class="absolute -top-10 left-8 w-20 h-20 bg-white rounded-2xl p-2 shadow-lg border border-gray-100 group-hover:scale-105 transition-transform flex items-center justify-center cursor-pointer">
+                        <img src="img/logo_dolaraldia.png" alt="Logo Dolar Al Día" class="w-full h-full object-contain rounded-xl">
+                    </a>
+                    
+                    <div class="pt-12 p-8">
+                        <a href="https://www.dolaraldiavzla.com" target="_blank" class="hover:text-brand-600 transition-colors">
+                            <h3 class="mt-4 text-xl font-bold text-gray-900 flex items-center gap-2">
+                                Dolar Al Día <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                            </h3>
+                        </a>
+                        <p class="mt-3 text-gray-500 text-sm leading-relaxed">
+                            Aplicación líder para el monitoreo de tasas cambiarias en tiempo real. Herramienta esencial para la toma de decisiones financieras personales y empresariales.
+                        </p>
+                        <div class="mt-6 border-t border-gray-50 pt-4 flex flex-wrap gap-3 items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Android</span>
+                                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">iOS</span>
+                            </div>
+                            <a href="https://www.dolaraldiavzla.com" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-800">
+                                Visitar web &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dolar México -->
+                <div class="group relative bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 mt-6">
+                    <!-- Logo con Link -->
+                    <a href="https://play.google.com/store/apps/details?id=com.carlosvpinto.dollar_mexico&hl" target="_blank" class="absolute -top-10 left-8 w-20 h-20 bg-white rounded-2xl p-2 shadow-lg border border-gray-100 group-hover:scale-105 transition-transform flex items-center justify-center cursor-pointer">
+                        <img src="img/logo_dolamexico.png" alt="Logo Dolar México" class="w-full h-full object-contain rounded-xl">
+                    </a>
+
+                    <div class="pt-12 p-8">
+                        <a href="https://play.google.com/store/apps/details?id=com.carlosvpinto.dollar_mexico&hl" target="_blank" class="hover:text-brand-600 transition-colors">
+                            <h3 class="mt-4 text-xl font-bold text-gray-900 flex items-center gap-2">
+                                Dolar México <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                            </h3>
+                        </a>
+                        <p class="mt-3 text-gray-500 text-sm leading-relaxed">
+                            Información precisa sobre el tipo de cambio del dólar en bancos y casas de cambio mexicanas. Actualización instantánea y comparativa bancaria.
+                        </p>
+                        <div class="mt-6 border-t border-gray-50 pt-4 flex flex-wrap gap-3 items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Android</span>
+                                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">iOS</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.carlosvpinto.dollar_mexico&hl" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-800">
+                                Descargar &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vendeturifa (SaaS) -->
+                <div class="group relative bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 mt-6">
+                    <!-- Logo con Link -->
+                    <a href="https://www.vendeturifa.com" target="_blank" class="absolute -top-10 left-8 w-20 h-20 bg-white rounded-2xl p-2 shadow-lg border border-gray-100 group-hover:scale-105 transition-transform flex items-center justify-center cursor-pointer">
+                        <img src="img/logo_rifa.png" alt="Logo Vendeturifa" class="w-full h-full object-contain rounded-xl">
+                    </a>
+
+                    <div class="pt-12 p-8">
+                        <a href="https://www.vendeturifa.com" target="_blank" class="hover:text-brand-600 transition-colors">
+                            <h3 class="mt-4 text-xl font-bold text-gray-900 flex items-center gap-2">
+                                Vendeturifa <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                            </h3>
+                        </a>
+                        <p class="mt-3 text-gray-500 text-sm leading-relaxed">
+                            Plataforma SaaS (Software as a Service) para la gestión integral de rifas y sorteos digitales. Automatización de ventas, asignación de números y pasarela de pagos.
+                        </p>
+                        <div class="mt-6 border-t border-gray-50 pt-4 flex flex-wrap gap-3 items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs font-semibold bg-indigo-50 text-indigo-700 px-2 py-1 rounded">SaaS</span>
+                                <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded">Web App</span>
+                            </div>
+                            <a href="https://www.vendeturifa.com" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-800">
+                                Probar SaaS &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Verification Section -->
+    <section id="nosotros" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Empresa Legalmente Constituida</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        DESOFTSIS LLC es una compañía de responsabilidad limitada registrada en el estado de Wyoming, Estados Unidos. Cumplimos con todos los estándares legales y de privacidad para operar internacionalmente.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-green-500"></i>
+                            <span>Wyoming Registered Entity</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-green-500"></i>
+                            <span>Google Play Developer Verified</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-green-500"></i>
+                            <span>AdMob Publisher Verified</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Datos de Registro</h3>
+                    <div class="space-y-3 text-sm text-slate-300 font-mono">
+                        <p><span class="text-slate-500 block text-xs uppercase mb-1">Company Name</span> DESOFTSIS LLC</p>
+                        <p><span class="text-slate-500 block text-xs uppercase mb-1">State of Formation</span> Wyoming, USA</p>
+                        <p><span class="text-slate-500 block text-xs uppercase mb-1">Principal Office Address</span> 5830 E 2ND ST, STE 7000 #33454<br>CASPER, WY 82609</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Contacto Corporativo</h2>
+                <p class="mt-4 text-gray-500">
+                    Para consultas de negocios, soporte de aplicaciones o temas legales.
+                </p>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row">
+                <!-- Info Side -->
+                <div class="bg-brand-900 p-10 md:w-2/5 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">Información de Contacto</h3>
+                        <p class="text-brand-100 mb-8 text-sm">
+                            Utilice los siguientes canales oficiales para comunicarse con DESOFTSIS LLC.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-location-dot mt-1 text-brand-400"></i>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Dirección Física</h4>
+                                    <p class="text-sm text-brand-100 mt-1 leading-relaxed">
+                                        5830 E 2ND ST, STE 7000 #33454<br>
+                                        CASPER, WY 82609<br>
+                                        USA
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-envelope mt-1 text-brand-400"></i>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Email</h4>
+                                    <p class="text-sm text-brand-100 mt-1">admin@desoftsis.com</p>
+                                    <p class="text-sm text-brand-100">desoftsis@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <p class="text-xs text-brand-200 opacity-60">
+                            © 2026 DESOFTSIS LLC
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="p-10 md:w-3/5">
+                    <!-- Formulario con atributos 'name' agregados -->
+<form id="contactForm" class="space-y-5">
+    <!-- Truco de seguridad (Honeypot) para evitar spam de robots -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- Configuración para que no salga captcha y responda en JSON -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="grid grid-cols-2 gap-5">
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+            <!-- Agregado name="nombre" -->
+            <input type="text" name="nombre" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition">
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Apellido</label>
+            <!-- Agregado name="apellido" -->
+            <input type="text" name="apellido" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition">
+        </div>
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <!-- Agregado name="email" -->
+        <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition">
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
+        <!-- Agregado name="asunto" -->
+        <select name="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition bg-white">
+            <option>Soporte App Dolar</option>
+            <option>Soporte Vendeturifa</option>
+            <option>Propuesta de Negocios</option>
+            <option>Otro</option>
+        </select>
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+        <!-- Agregado name="mensaje" -->
+        <textarea name="mensaje" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-brand-900 text-white font-bold py-3 px-4 rounded-lg hover:bg-brand-800 transition shadow-lg">
+        Enviar Mensaje
+    </button>
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="font-bold text-gray-900 text-lg">DESOFTSIS LLC</span>
+                    <p class="text-sm text-gray-500 mt-4 max-w-xs">
+                        Desarrollando tecnología accesible y transparente desde Wyoming para Latinoamérica y el mundo.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Productos</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-brand-600">Dolar Al Día</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Dolar México</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Vendeturifa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-brand-600">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Términos de Uso</a></li>
+                        <li><a href="#" class="hover:text-brand-600">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 DESOFTSIS LLC. Todos los derechos reservados.</p>
+                <p class="mt-2 md:mt-0">Casper, Wyoming 82609, USA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
